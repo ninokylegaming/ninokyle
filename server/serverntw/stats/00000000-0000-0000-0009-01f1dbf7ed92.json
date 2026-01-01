@@ -1,0 +1,33 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:oak_leaves": 3,
+      "minecraft:oak_log": 4
+    },
+    "minecraft:picked_up": {
+      "minecraft:oak_log": 4,
+      "minecraft:stick": 4,
+      "minecraft:oak_sapling": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:stick": 4,
+      "minecraft:oak_planks": 16,
+      "minecraft:crafting_table": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 5738,
+      "minecraft:time_since_rest": 4577,
+      "minecraft:walk_one_cm": 6466,
+      "minecraft:swim_one_cm": 672,
+      "minecraft:total_world_time": 4577,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 1434,
+      "minecraft:walk_under_water_one_cm": 50,
+      "minecraft:walk_on_water_one_cm": 68,
+      "minecraft:play_time": 4577,
+      "minecraft:jump": 14,
+      "minecraft:time_since_death": 4577
+    }
+  },
+  "DataVersion": 4671
+}
