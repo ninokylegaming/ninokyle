@@ -1,0 +1,19 @@
+# Exported from Render on 2026-01-01T00:12:43Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: ninokyle
+      runtime: python
+      repo: https://github.com/ninokylegaming/ninokyle
+      plan: free
+      envVars:
+      - key: Nisbs
+        sync: false
+      region: singapore
+      buildCommand: pip install -r requirements.txt
+      startCommand: gunicorn your_application.wsgi
+      autoDeployTrigger: commit
