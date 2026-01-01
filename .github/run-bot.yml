@@ -1,0 +1,23 @@
+name: Run Python Bot 24/7
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # Runs every 30 minutes
+  workflow_dispatch:          # Optional: manual trigger
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt || echo "No dependencies"
+      - name: Run Bot
+        run: python bot.py
